@@ -38,7 +38,7 @@ button.addEventListener('click', () => {
     if (day > 31 || month > 12 || year < 2020) {
         error.style.display = 'inline';    
         return 1;
-    } 
+    }
 
     const divModal = document.querySelector('.modal-wrapper');
     divModal.style.display = 'none';
