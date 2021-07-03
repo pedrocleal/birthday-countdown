@@ -1,8 +1,10 @@
 const countdown = () => {
+    // Get user birthday data
     const userDay = Number(document.querySelector('.btn-day').value);
     const userMonth = Number(document.querySelector('.btn-month').value);
     const userYear = Number(document.querySelector('.btn-year').value);
     
+    // Formate the user birthday
     const userBirthday = `${userMonth} ${userDay}, ${userYear} 00:00:00`;
     
     const countdownDate = new Date(userBirthday).getTime();
@@ -13,7 +15,6 @@ const countdown = () => {
     const minute = second * 60;
     const hour = minute * 60;
     const day = hour * 24;
-
     const textDay = Math.floor(diff / day);
     const textHour = Math.floor((diff % day) / hour);
     const textMinute = Math.floor((diff % hour) / minute);
