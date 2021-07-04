@@ -14,6 +14,10 @@ h1 {
   font-size: 4rem;
 }
 
+img {
+  height: 50vh;
+}
+
 .container {
   min-height: 100vh;
 
@@ -21,10 +25,6 @@ h1 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-
-img {
-  height: 50vh;
 }
 
 .countdown {
@@ -143,12 +143,13 @@ footer a {
 
   footer {
     margin-top: 50px;
-  }
+  } 
 }
 
 @media screen and (max-width: 580px) {
   h1 {
     font-size: 2rem;
+    text-align: center;
   }
 
   img {
@@ -165,8 +166,14 @@ footer a {
     height: 350px;
     width: 350px;
   }
-}
 
+  .container-day,
+  .container-hour,
+  .container-minute,
+  .container-second {
+    padding: .5rem;
+  }
+}
 
 @media screen and (max-width: 400px) {
   h1 {
@@ -187,12 +194,17 @@ footer a {
     font-size: 2rem;
   }
 
+  .modal-wrapper {
+    height: 100vh;
+  }
+
   .modal {
     padding: 20px;
     font-size: .7rem;
     height: 350px;
     width: 250px;
   } 
+
 
   .modal-form input {
     padding: 2.5px 5px;
