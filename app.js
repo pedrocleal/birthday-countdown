@@ -35,7 +35,7 @@ button.addEventListener('click', () => {
 
     const error = document.querySelector('.error');
 
-    if (day > 31 || month > 12 || year < 2020) {
+    if (day > 31 || month > 12 || year < 2021) {
         error.style.display = 'inline';    
         return 1;
     }
