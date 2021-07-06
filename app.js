@@ -5,7 +5,7 @@ const countdown = () => {
     const userYear = Number(document.querySelector('.btn-year').value);
     
     // Formate the user birthday
-    const userBirthday = `${userMonth} ${userDay}, ${userYear} 00:00:00`;
+    const userBirthday = `${userYear} ${userMonth}, ${userDay} 00:00:00`;
     
     const countdownDate = new Date(userBirthday).getTime();
     const currentDate = new Date().getTime();
