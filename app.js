@@ -38,7 +38,8 @@ button.addEventListener('click', () => {
     const error = document.querySelector('.error');
 
     if (day > 31 || month > 12 || year < 2021) {
-        error.style.display = 'inline';    
+        error.style.opacity = '1';    
+        error.style.marginTop = '10px';
         return 1;
     }
 
