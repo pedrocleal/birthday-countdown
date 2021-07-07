@@ -5,8 +5,10 @@ const countdown = () => {
     const userYear = Number(document.querySelector('.btn-year').value);
     
     // Formate the user birthday
-    const userBirthday = `${userYear}-${userMonth}-${userDay} 00:00:00`;
-    
+    const userBirthday = `${userYear}/${userMonth}/${userDay} 00:00:00`;
+    // const formatDate = userBirthday.replaceAll('-','/');
+    // console.log(formatDate);
+
     const countdownDate = new Date(userBirthday).getTime();
     const currentDate = new Date().getTime();
     const diff = countdownDate - currentDate;
